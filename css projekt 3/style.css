@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+   
+    margin: 15px;
+    padding: 20px;
+   
+    font-family: 'Montserrat', sans-serif;
+
+    min-height: 100%;
+    max-width: 100%;
+    background-color: rgb(4, 4, 4);
+    
+    background-image: 
+    linear-gradient(97deg, rgb(226,29,60) 50%, rgba(0,0,0,0.5) 50%, transparent 50%),
+    url("waves-cropped.svg"),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("pexels-photo-9553909.jpeg");
+
+
+    background-repeat: 
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+
+    background-size: 
+    100% 100%,
+    40% auto,
+    100% 100%,
+    60% auto;
+
+
+    background-position: 
+    50% 50%,
+    100% 100%,
+    50% 50%,
+    100% 25%;
+}
+
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh; 
+}
+
+.leftbox {
+    flex: 3 0 46%;
+}
+
+.rightbox {
+  text-align: left;
+  flex: 0 3 50%;
+  color: white;
+    
+
+  margin-top: 45px;
+  margin-bottom: 75px;
+  margin-left: 40px;
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-style:italic;
+ 
+}
+
+.x {
+  
+  font-size: 10px;
+}
+
+.infotext {
+  font-style: italic;
+  margin-top: 80px;
+  font-size: 17px;
+
+}
+
+
+
+
+
+header {
+    margin-top: 45px;
+    margin-bottom: 75px;
+    margin-left: 25px;
+    margin-right: 15px;
+
+    text-align: left;
+    letter-spacing: 0.2em;
+    color: white;
+    font-size: 20px;
+
+}
+
+ 
+
+
+main {
+    
+    margin-top: 15px;
+    margin-bottom: 14px;
+    margin-left: 25px;
+    margin-right: 15px;
+
+    letter-spacing: 0.2em;
+    font-style: italic;
+    font-size: 19px;
+    color: white;
+    font-weight: normal;
+}
+
+main > strong {
+    text-transform: uppercase;
+}
+/*
+.button {
+    display: inline-block;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    border-radius: 999999px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-left: 60px;
+    
+}
+
+.button:hover {
+    background-color: rgb(50,50,50);
+}
+*/
+
+
+
+
+
+.button-49 {
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 15px;
+  font-family: 'Monteserrat', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #080103 10%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #d00923;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'HIER KLICKEN';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 2s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+#motivationtext {
+
+  font-size: 20px;
+  width: 350px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  
+  
+/*
+    background-size: 
+    100% 100%,
+    40% auto,
+    100% 100%,
+    60% auto; */
+
+
+    background-position: 
+    50% 50%,
+    100% 100%,
+    50% 50%,
+    100% 25%;
+    /*text-align: center;*/
+    text-align: justify;
+}
+
+.beispiel {
+
+
+    margin-top: 15px;
+    margin-bottom: 14px;
+    margin-left: 25px;
+    margin-right: 15px;
+
+    letter-spacing: 0.2em;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    font-weight: normal; 
+
+
+
+
+margin-top: 15px;
+margin-bottom: 14px;
+margin-left: 25px;
+margin-right: 15px;
+letter-spacing: 0.2em;
+font-style: italic;
+font-size: 20px;
+color: white;
+font-weight: normal;
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+
+footer {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+   
+    
+    
+    
+    
+}
+
+.links {
+  margin-top: 40px; 
+
+}
+
+.links a {
+    color: rgb(41, 41, 49);
+    font-size: 24px;
+ 
+   
+}
+
+footer a:link{
+  color: rgb(47, 0, 255);
+}
+
+footer a:hover{
+  color: rgb(47, 0, 255);
+}
+
+footer a:active{
+  color: rgb(47, 0, 255);
+}
